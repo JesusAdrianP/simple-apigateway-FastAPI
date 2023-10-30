@@ -24,20 +24,6 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.route("/{path:path}",
-        methods=["GET", "POST", "PUT", "PATCH", "DELETE"]
-        )
-async def users_catch_all(path: Path):
-    print(type(path))   
-    print(path)
-    print(dict(path))
-    print(path['path'], "  ", path['method'])
-    body = await path.body()
-    print(body)
-    return JSONResponse(content={'path': "dsjhsk"}, status_code=200)
-
-
-
 
 async def reverse_proxy(request: Request):
     print(request)
