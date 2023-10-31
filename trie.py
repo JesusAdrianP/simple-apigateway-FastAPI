@@ -26,7 +26,7 @@ class Trie:
         def rec(node: 'Trie.Node', string: list[str], all_strings: list[str]) -> list[str]:
             if node.is_end:
                 all_strings.append("".join(string))
-                
+
             for ch in node.children:
                 string.append(ch)
                 rec(node.children[ch], string, all_strings)
@@ -44,38 +44,3 @@ class Trie:
             self.children = {}
             self.is_end = is_end
     
-
-trie = Trie()
-
-# print(trie.children)
-
-# trie.insert("/users")
-# print(trie.children)
-
-# trie.insert("hola")
-# print(trie.children)
-
-# print(trie.children['/'].children)
-
-# r = trie.search("hola").is_end
-
-# print(r)
-
-
-print(trie)
-
-trie.insert("/users")
-
-print(trie.root.children)
-
-trie.insert("hola")
-
-print(trie.root.children)
-
-r = trie.search("hola1")
-
-print(r)
-
-s= trie.get_strings()
-
-print(s)
