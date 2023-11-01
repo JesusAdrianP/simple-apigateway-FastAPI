@@ -39,8 +39,6 @@ This json file should have the following structure.
 
 ## Run Locally
 
-You should first create the file `urls_config.json`, follow this [instructions](#usage)
-
 Clone the project
 
 ```bash
@@ -52,6 +50,13 @@ Go to the project directory
 ```bash
  cd simple-apigateway-FastAPI
 ```
+
+<br>
+
+Now you should create the file `urls_config.json` inside the project directory, follow this [instructions](#usage)
+
+<br>
+
 
 Create virtual enviroment
 
