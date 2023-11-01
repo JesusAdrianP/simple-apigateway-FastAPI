@@ -39,6 +39,8 @@ This json file should have the following structure.
 
 ## Run Locally
 
+You should first create the file `urls_config.json`, follow this [instructions](#usage)
+
 Clone the project
 
 ```bash
