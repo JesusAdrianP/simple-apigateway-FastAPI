@@ -1,6 +1,15 @@
 # Simple API Gateway
 This is a simple API Gateway make whit FastAPI
 
+## Installation
+
+To Run this project, you will need:
+
+* Python 3.10 or higher
+* Pip
+
+See how to run it locally [here](#run-locally)
+
 ## Usage
 
 Add a new json file name ```urls_config.json```, at the same level of the main.py file.
