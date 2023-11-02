@@ -74,12 +74,17 @@ async def reverse_proxy(request: Request) -> Response:
     """
     from main import URLS_CONFIG, RESORCES_TO_SERVICES, URL_PATHS_TRIE
 
-    url = resolve_mircroservice_url(target_url=request['path'],
+    target_url = request['path']
+    query_params = request.query_params.__str__()
+
+    if query_params:
+        target_url = target_url + query_params
+
+    url = resolve_mircroservice_url(target_url=target_url,
                                     resources_services_map= RESORCES_TO_SERVICES,
                                     urls_config= URLS_CONFIG,
                                     url_path_trie= URL_PATHS_TRIE
                                     )
-
 
     response = await make_request(url, request)
 
