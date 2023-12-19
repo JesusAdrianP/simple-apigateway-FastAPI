@@ -1,5 +1,6 @@
 import os
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from proxy_manager import reverse_proxy
 from  utils import get_data_from_json_file, resorce_path_identifier_to_service_map, generate_trie_for_resorce_path_identifiers
 
