@@ -1,0 +1,27 @@
+{
+    "farmsAPI": {
+        "url": "https://farm-api-2.onrender.com",
+        "resource_path_identifier": "/farms"
+    },
+    "seedAPI": {
+        "url": "https://farm-api-2.onrender.com",
+        "resource_path_identifier": "/seeds"
+    },
+    "seedPropertiesAPI": {
+        "url": "https://farm-api-2.onrender.com",
+        "resource_path_identifier": "/seed-properties"
+    },
+    "weatherAPI": {
+        "url": "https://farm-api-2.onrender.com",
+        "resource_path_identifier": "/weather-api"
+    },
+    "freemiunAPI": {
+        "url": "https://freemiun-api.onrender.com",
+        "resource_path_identifier": "/freemiun"
+    },
+    "usersAPI": {
+        "url": "https://weedweb-crud.onrender.com",
+        "resource_path_identifier": "/users/api"
+    }
+
+}
