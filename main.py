@@ -14,6 +14,13 @@ RESORCES_TO_SERVICES = resorce_path_identifier_to_service_map(URLS_CONFIG)
 
 URL_PATHS_TRIE = generate_trie_for_resorce_path_identifiers(URLS_CONFIG)
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Puedes reemplazar "*" con la URL específica de tu frontend en Render
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def read_root():
